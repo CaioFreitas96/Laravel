@@ -17,6 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/calculadora', 'App\Http\Controllers\CalculadoraController@index');
+Route::get('/requisicao/{phrase}/{author}', 'App\Http\Controllers\RequisicaoController@phrase');
+
     
 
